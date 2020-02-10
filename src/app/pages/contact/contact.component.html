@@ -1,0 +1,30 @@
+<div class="example-form-wrapper">
+  <form action="" class="example-form" #contactForm="ngForm" (ngSubmit)="handler.send(contactForm)" novalidate>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="First Name"
+             ngModel #firstName="ngModel"
+             name="firstName" value="" minlength="10" required>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Last Name"
+             ngModel #lastName="ngModel"
+             name="lastName" value="" maxlength="10" required>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="E-mail"
+             ngModel #email="ngModel"
+             name="email" value="" type="email" email required>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="Leave a comment"
+                ngModel #message="ngModel"
+                name="message" rows="10"></textarea>
+    </mat-form-field>
+    <div class="form-footer">
+      <button class="send-button" type="submit" mat-raised-button color="primary">Send</button>
+    </div>
+  </form>
+  <div class="success-message" *ngIf="this.handler.submitted">
+    {{this.handler.formSendMessage}}
+  </div>
+</div>

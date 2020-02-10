@@ -1,0 +1,4 @@
+<div>
+  <button class="toggle-button" mat-raised-button color="secondary" (click)="handler.toggleCard()">Show Card</button>
+  <app-card *ngIf="handler.isCardOpen" [data]="handler.card" (callback)="handler.toggleCard()"></app-card>
+</div>

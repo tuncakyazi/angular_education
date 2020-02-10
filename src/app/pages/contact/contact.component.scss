@@ -1,0 +1,20 @@
+.example-form-wrapper {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.example-form {
+  width: 70vw;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}

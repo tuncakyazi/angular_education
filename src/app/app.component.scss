@@ -1,0 +1,22 @@
+.exp-container {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.exp-toggle {
+  position: fixed;
+  z-index: 2;
+}
+.sidenav-container {
+  flex: 1;
+  .sidenav-content {
+    padding: 80px 15px 0 15px;
+  }
+  .exp-sidenav {
+    padding-top: 55px;
+  }
+}
